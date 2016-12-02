@@ -1,0 +1,230 @@
+/*BASICS*/
+
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/*PROJECT SPECIFICS*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Karla;
+}
+.nv-font-antialiased {
+  -webkit-font-smoothing: antialiased;
+}
+.nv-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+@media (max-width: 1060px) {
+  .nv-wrapper {
+    max-width: 760px;
+  }
+}
+.nv-header {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+
+}
+.nv-header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.nv-header ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.nv-header ul {
+  padding: 20px 0;
+  /*box-shadow: 0px 1px 1px #ddd;*/
+  border-bottom: 1px solid #ddd;
+}
+.nv-header li {
+  display: block;
+  float: left;
+  width: 14.2857142857%;
+  text-align: center;
+}
+.nv-header .nv-header-ul li:not(.nv-header__logo) a {
+  color: #222;
+  display: block;
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 5px;
+  position: relative;
+}
+.nv-header a:hover {
+  color: #fff;
+  background: #da0f03;
+}
+.nv-header .nv-header-ul .nv-header__logo a {
+  margin-top: 0px;
+
+  background-image: url('../images/ff_logo_01.png');
+  background-position: 50% 50%;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nv-header__logo a:hover {
+  background: none;
+  background-image: url('../images/ff_logo_02.png');
+  background-position: 50% 50%;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  -webkit-transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+  -moz-transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+  -o-transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+  -ms-transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+}
+.nv-header a ul {
+  position: absolute;
+  top: 50px;
+  min-width: 160px;
+}
+.nv-content {
+  margin-top: 91px;
+  padding-top: 40px;
+}
+.nv-bg {
+   /*background: url('http://netdna.webdesignerdepot.com/uploads/2013/06/featured48.jpg') repeat;*/
+  /*background: #f4f4f4;*/
+  position: fixed;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.nv-main {
+  margin: 0 auto;
+}
+.nv-sharing {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.nv-sharing img {
+  height: 28px;
+  margin-top: 31px;
+  margin-left: 20px;
+}
+.nv-lang {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  z-index: 1;
+  color: red;
+  margin-top: 20px;
+}
+
+.nv-lang i {
+  font-size: 26px;
+  color: #333;
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 50%  51%;
+  transition: all 0.3s;
+}
+.nv-lang a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+
+}
+.nv-lang a:hover i {
+  color: #da0f03;
+  -webkit-transform-origin: 50%  50%;
+  transform: rotate(0deg);
+}
+
+/*BXSLIDER*/
+.bx-wrapper .bx-viewport {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    left: 0;
+}
+.bx-wrapper .bx-controls-direction a {
+  z-index: 1020 !important;
+}
+video {
+  max-height: 640px;
+}
+#movie {
+  width: 100%;
+}
+.nv-main-slider .bx-wrapper img {
+  margin-top: -7px;
+}
+.nv-main-slider .bx-next {
+  margin-right: -40px;
+}
+.nv-main-slider .bx-prev {
+  margin-left: -40px;
+}
+.nv-main-slider .bx-prev:hover,
+.nv-main-slider .bx-next:hover {
+  opacity: 0.6;
+}
+.nv-main-slider .bx-next img {
+  float: right;
+}
+.nv-main-slider .bx-wrapper .bx-next,
+.nv-main-slider .bx-wrapper .bx-prev {
+  background: none;
+}
+/*.quotes-slider {
+  font-size: 1.4em;
+font-style: italic;
+text-align: center;
+}*/
+.quotes-slider p.after {
+    font-style: normal;
+    opacity: .6;
+}
+
+.quotes-slider li {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+
+}
